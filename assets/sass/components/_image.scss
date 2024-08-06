@@ -1,0 +1,22 @@
+@mixin img-size {
+    width: 35px;
+    height: 35px;
+    margin-right: 10px;
+}
+
+.image__logo--square {
+    @include img-size;
+    border-radius: 8px;
+}
+
+.image__logo--circle {
+    @include img-size;
+    border-radius: 20px;
+}
+
+.image__logo--circle-sm {
+    width: 27px;
+    height: 27px;
+    margin-right: 10px;
+    border-radius: 20px;
+}

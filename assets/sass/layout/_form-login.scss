@@ -1,0 +1,58 @@
+@use '../themes/colors';
+$form-width: 300px;
+
+//para poner lo que se va repitiendo
+@mixin align-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.login {
+    @include align-column; //de esta forma incluimos el mixin
+    padding: 10px;
+    margin-bottom: 10px;
+
+    &__title {
+        font-weight: 400;
+        margin-bottom: 5px;
+    }
+}
+
+.form {
+    @include align-column;
+
+    &__container-inputs {
+        @include align-column;
+
+        .form__container-checks {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            font-size: 13px;
+        }
+    }
+
+    &__container-buttons {
+        @include align-column;
+        margin-top: 10px;
+
+        .button--primary-link {
+            text-decoration: none;
+            color: colors.$white;
+        }
+    }
+
+    &__footer-text {
+        margin-top: 10px;
+        font-size: 13px;
+    }
+
+    &__link--register {
+        font-weight: bold;
+        text-decoration: none;
+        color: colors.$black;
+    }
+
+}

@@ -1,0 +1,12 @@
+@use '../layout/form-login' as form; //me traigo la variable desde layout form-login para usarla acá y le doy un alias
+@use '../themes/colors';
+
+.input {
+    width: form.$form-width;
+    height: 30px;
+    border-radius: 10px;
+    border-width: 0px;
+    margin-block: 5px;
+    padding-left: 10px;
+    border: 2px solid colors.$custom-grey;
+}

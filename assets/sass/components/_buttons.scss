@@ -1,0 +1,36 @@
+@use '../themes/colors';
+@use '../themes/fonts';
+
+.button {
+    @include align-column;
+    flex-direction: row;
+    width: $form-width;
+    height: 50px;
+    margin-block: 5px;
+    background-color: colors.$white;
+    border-radius: 10px;
+    border: 2px solid colors.$custom-grey;
+    font-family: fonts.$poppins-font;
+}
+
+.button--icon {
+    width: 35px;
+    height: 35px;
+    object-fit: contain;
+    margin-right: 10px;
+}
+
+.button--primary {
+    background-color: colors.$primary-green;
+    color: colors.$white;
+
+}
+
+.button--subs {
+    width: 150px;
+    height: 35px;
+    font-weight: 700;
+    border-radius: 10px;
+    border: none;
+    background-color: colors.$custom-grey;
+}

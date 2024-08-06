@@ -1,0 +1,70 @@
+@use '../themes/colors';
+@use '../abstracts/variables';
+
+.section-post {
+    padding-inline: variables.$general-padding;
+
+    &__title {
+        display: flex;
+        align-items: center;
+        justify-content: left;
+    }
+
+    &__footer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 60%;
+    }
+
+    &__container {
+        display: flex;
+        align-items: center;
+    }
+
+    &__container--season {
+        font-size: 14px;
+    }
+
+    &__main {
+        background-color: colors.$custom-grey;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 10px;
+        padding: 10px;
+        font-size: 12px;
+
+        &--image {
+            width: 50vw;
+            height: 25vw;
+            border-radius: 10px;
+            margin: 10px 0 10px 0;
+        }
+    }
+}
+
+.section-related {
+    padding-inline: variables.$general-padding;
+
+    &__container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    &__image {
+        width: 25vw;
+        height: 15vw;
+        border-radius: 10px;
+    }
+
+    &__container--sass {
+        padding-left: 20px;
+    }
+
+    &__container--apijs {
+        padding-right: 10px;
+    }
+
+}

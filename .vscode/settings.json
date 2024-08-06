@@ -1,0 +1,7 @@
+{
+    "editor.formatOnSave": true,
+    "editor.useTabStops": true,
+    "workbench.editor.pinnedTabsOnSeparateRow": false,
+    "workbench.editor.scrollToSwitchTabs": true,
+    "liveServer.settings.port": 5501
+}

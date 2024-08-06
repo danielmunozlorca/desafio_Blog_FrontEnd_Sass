@@ -1,0 +1,21 @@
+//mains.scss #manifest file
+
+//abstracts
+@import 'abstracts/variables';
+
+//vendors
+
+//base
+@import 'base/typography';
+
+//layout
+
+@import 'layout/form-login', 'layout/header', 'layout/body', 'layout/container', 'layout/form-subscribe', 'layout/footer', 'layout/section';
+
+//components
+@import 'components/buttons', 'components/inputs', 'components/image';
+
+//pages
+
+//themes
+@import 'themes/colors', 'themes/fonts';

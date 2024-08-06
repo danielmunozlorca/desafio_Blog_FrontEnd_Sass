@@ -1,0 +1,7 @@
+@use '../themes/fonts';
+
+body {
+    margin: 0;
+    padding: 40px;
+    font-family: fonts.$poppins-font;
+}
